@@ -1,0 +1,386 @@
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #cdc60e;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    padding-left: 310px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 350px;
+}
+
+.menu li {
+    float: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-size: 16px;
+
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/pick.png) 90% 80%/ auto 85% no-repeat, url(../img/FON.jpg) center/cover no-repeat;
+}
+
+.title__container {
+    margin: 432px 0px 0px 404px;
+    float: left;
+    color: #b8bac3;
+    text-align: center;
+}
+
+.title__container h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title__container h4 {
+    margin-top: 60px;
+    font-size: 19px;
+    color: #9d9ea3;
+
+}
+
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #7f8188;
+    background: none;
+    border-radius: 5px;
+    color: #7f8188;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+}
+
+.obo__mne {
+    width: 100%;
+    height: 50px;
+    margin: 100px 50px 50px 100px;
+}
+
+.obo__mne h2 {
+    padding-left: 810px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 24px;
+}
+
+.obo__mne img {
+    margin: 80px 760px;
+    width: 220px;
+    height: 220px;
+    display: inline - block;
+    border-radius: 50%;
+}
+
+.obo__mne p {
+    padding-left: 555px;
+}
+
+.obo__mne input {
+    margin: 30px 810px;
+    border: 2px solid #7f8188;
+    background: none;
+    border-radius: 5px;
+    color: #7f8188;
+    font-size: 14px;
+}
+
+.chto__umey {
+    width: 100%;
+    height: 900px;
+    background: url(../img/kartinkafon.png) center/cover no-repeat;
+}
+
+.chto__umey h2 b {
+    width: 100%;
+    height: 150px;
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 560px 0px 0px 900px;
+    color: black;
+    
+}
+
+.GG1 {
+    float: left;
+    width: 470px;
+    text-align: center;
+    
+
+}
+
+.GG2 {
+    float: left;
+    width: 470px;
+    text-align: center;
+}
+
+.GG3 {
+    float: left;
+    width: 470px;
+    text-align: center;
+}
+
+.GG4 {
+    float: left;
+    width: 470px;
+    text-align: center;
+}
+
+.chto__umey b {
+    line-height: 60px;
+    color: orange;
+    font-size: 17px;
+    
+}
+
+.keysi h2 {
+    width: 100%;
+    height: 50px;
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 100px 0px 0px 935px;
+    color: black;
+}
+
+.keysi p {
+    margin: 0px 0px 40px 685px;
+
+}
+.keysi img{
+    
+    width: 50%;
+    height: 900px;
+    margin: 0px 0px 60px 550px;
+}
+
+.klient b {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+ line-height: 30px;
+
+}
+
+.klient {
+
+    padding-left: 600px;
+    float: left;
+    margin-right: 140px;
+
+}
+
+.proekt b {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+line-height: 30px;
+}
+
+.proekt {
+    padding-left: 890px;
+}
+
+.chek h2{
+     margin: 120px 0px 30px 890px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.chek select{
+     padding-right: 500px;
+   margin: 0px 0px 0px 700px;
+    }
+.chek h3{
+    margin: 20px 0px 10px 700px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.dizain h3{
+     margin: 20px 0px 10px 700px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    
+}
+.dizain select{
+     padding-right: 500px;
+   margin: 0px 0px 0px 700px;
+}
+.adptivnost h3{
+      margin: 20px 0px 10px 700px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    
+}
+.adptivnost select{
+     padding-right: 500px;
+   margin: 0px 0px 0px 700px;
+}
+.srock {
+     margin: 20px 0px 10px 700px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.main__fad {
+     width: 100%;
+    height: 400px;
+    background: url(../img/infot.png) center/cover no-repeat;
+}
+.main__fad h2{
+     margin: 60px 0px 70px 790px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+.main120 {
+     float: left;
+    width: 470px;
+    text-align: center;
+}
+.main4543{
+     float: left;
+    width: 470px;
+    text-align: center;
+    
+}
+.main443{
+      float: left;
+    width: 470px;
+    text-align: center;
+}
+.main32{
+       float: left;
+    width: 470px;
+    text-align: center;
+    
+}
+.main__fad b{
+    width: 100%;
+    line-height: 60px;
+    color: black;
+    font-size: 19px;
+}
+.otzblv h2{
+    margin: 60px 0px 0px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+.otzblv img{
+    margin: 80px 840px;
+    width: 220px;
+    height: 220px;
+    display: inline - block;
+    border-radius: 50%;
+}
+.otzblv p{
+    padding-left: 10px;
+    text-align: center;
+}
+.otzblv {
+    text-align: center;
+}
+.kontakt {
+     padding-left: 10px;
+    text-align: center;
+    line-height: 60px;
+     margin: 0px 0px 40px 0px;
+    color: white;
+     
+              }
+.kontakt h2{ 
+    height: 80px;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 160px 0px 0px 10px;
+    color: black;
+    color: white;
+}
+.nevs{
+      float: left;
+    width: 630px;
+    text-align: center;
+    color: white;
+}
+.info{
+    float: left;
+    width: 630px;
+    text-align: center;
+    color: white;
+}
+.nomer{
+      float: left;
+    width: 630px;
+    text-align: center;
+    color: white;
+}
+.sms{
+    text-align:center;
+   
+}
+.sms h3{
+     margin: 290px 0px 50px 10px;
+     font-size: 22px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    color: white;
+}
+.naw input{ 
+   height: 30px;
+    text-align: center;
+    border: 2px solid white;
+    background: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin: 10px 14px 0px 14px;
+   
+}
+.MOI {
+    width: 100%;
+    height: 900px;
+    background: url(../img/onfor.png) center/cover no-repeat;
+}
+.mapa{
+        margin: 125px 0px 0px 0px;
+
+}
+.mapa h4{
+     width: 100%;
+    height: 60px;
+    background:  #cdc60e;
+
+}
+.imy input{
+    
+     height: 25px;
+    width:344px;
+ 
+}
