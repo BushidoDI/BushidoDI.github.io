@@ -1,0 +1,23 @@
+body{
+    padding: 50 px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: azure;
+    transition: all 2s 0.1s ease;
+    
+
+}
+.box span{
+    display:block;
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+.box:active{
+   
+    margin-left: 300px;
+    }

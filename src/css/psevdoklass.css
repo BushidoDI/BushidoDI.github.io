@@ -1,0 +1,17 @@
+/*
+p:first-letter{
+    color:red;
+    font-size: 20px;
+     } 
+*/
+ul{
+    margin: 50px;
+    font-size: 18px;
+}
+li:: after{
+    content: "";
+}
+
+li::before{
+    content: "";
+}
