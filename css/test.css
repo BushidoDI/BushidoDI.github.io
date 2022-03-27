@@ -1,0 +1,29 @@
+ul{
+    margin: 50px;
+    font-size: 18px;
+    width: 30px;
+}    
+li{
+    margin-bottom: 30px;
+}
+li::after{
+    content: "";
+}
+li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 10px;
+}
+li::before{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: none;
+}
+ПСЕВДО КЛАСС И ПСЕВДО ЭЛЕМЕНТ. ТО ЕСТЬ В ЛИ БУДУТ РАБОАТЬ ПРАВИЛА.
+li:hover::before{
+    background-color: red;
+}
