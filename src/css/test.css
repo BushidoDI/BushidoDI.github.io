@@ -27,3 +27,47 @@ li::before{
 li:hover::before{
     background-color: red;
 }
+
+.preloader{
+    size: 200px;
+    --bg-color: #32314c;
+    --first-color: #ff7473;
+    --second-color: #ffc952;
+    --third-color: #47b8e0;
+    --thicknss: 3px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preloader__content{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid red;
+}
+.preloader__first,
+.preloader__seccond,
+.preloader__third{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+preloader__first{
+    border: var(--thickness) solid var(--first-color);
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    
+}
+preloader__second{
+     border: var(--thickness) solid var(--second-color);
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+}
+.preloader__third{
+     border: var(--thickness) solid var(--third-color);
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+}

@@ -1,3 +1,101 @@
+/*.preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+.loader{
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+}
+&.done {
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes spin{
+    form{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    
+    }
+}*/
+
+.preloader{
+    --bg-color: #32314c;
+    --size: 200px;
+    --first-color: #ff7473;
+    --second-color: #ffc952;
+    --third-color: #47b8e0;
+    --thicknss: 3px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--duration);
+}
+.preloader__content{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+   
+}
+.preloader__first,
+.preloader__seccond,
+.preloader__third{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: var (--duration) linear infinite;
+}
+.preloader__first{
+    border-bottom: var(--thickness) solid var(--first-color);
+    animation-name: first;
+    
+}
+.preloader__second{
+     border-right: var(--thickness) solid var(--second-color);
+    animation-name: second;
+}
+.preloader__third{
+     border: var(--thickness) solid var(--third-color);
+    animation-name: third;
+}
+@keyframes first{
+    0% { transform: rotateX(35deg) rotateY(-45deg) rotate(0deg);}
+    100% {transform: rotate(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes second{
+    0% { transform: rotateX(50deg) rotateY(10deg) rotate(0deg);}
+    100% {transform: rotate(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes first{
+    0% { transform: rotateX(35deg) rotateY(55deg) rotate(0deg);}
+    100% {transform: rotate(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
 body {
 
     font-family: Arial, sans-serif;
@@ -19,6 +117,7 @@ nav {
     -webkit-animation: com ing 2s ease;
     -o-animation: coming 2s ease;
     animation: coming 2s ease;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -49,10 +148,10 @@ main {
     width: 100%;
     height: 100%;
     background: url(../img/pick.png) 90% 80%/ auto 85% no-repeat, url(../img/inf.jpg) center/cover no-repeat;
-     background-image: url(../img/pick.png), url(../img/inf.jpg);
-    
+    background-image: url(../img/pick.png), url(../img/inf.jpg);
+
     background-attachment: fixed;
-    
+
 }
 
 .title__container {
@@ -229,6 +328,9 @@ main {
     border-radius: 5px;
     color: #7f8188;
     font-size: 19px;
+    transition: all 0.4s;
+    transform: scale(1);
+
 }
 
 .chto__umey {
@@ -238,7 +340,7 @@ main {
 }
 
 .chto__umey h2 {
-
+    line-height: 135px;
     margin: 60px 0px 70px 872px;
     font-size: 30px;
     font-weight: bold;
@@ -263,19 +365,24 @@ main {
 }
 
 .GG1 img:hover {
-    width: 150px;
+
+    transition: all 0.6s;
+    transform: scale(2);
 }
 
 .GG2 img:hover {
-    width: 150px;
+    transition: all 0.6s;
+    transform: scale(2);
 }
 
 .GG3 img:hover {
-    width: 150px;
+    transition: all 0.6s;
+    transform: scale(2);
 }
 
 .GG4 img:hover {
-    width: 150px;
+    transition: all 0.6s;
+    transform: scale(2);
 }
 
 .chto__umey b {
@@ -389,23 +496,13 @@ main {
     color: black;
 }
 
-.chek:hover{
-    transform: scale(1.1);
-}
-
-
-
-
-
-
-
 .chek select {
     padding-right: 700px;
     margin: 0px 0px 0px 600px;
     height: 40px;
     border: 2px solid #7f8188;
     background: #f0f0f0;
-    color: #7f8188;  
+    color: #7f8188;
 }
 
 .chek h3 {
@@ -426,10 +523,10 @@ main {
 .dizain select {
     padding-right: 700px;
     margin: 0px 0px 0px 600px;
-     height: 40px;
+    height: 40px;
     border: 2px solid #7f8188;
     background: #f0f0f0;
-    color: #7f8188;  
+    color: #7f8188;
 }
 
 .adptivnost h3 {
@@ -443,10 +540,10 @@ main {
 .adptivnost select {
     padding-right: 700px;
     margin: 0px 0px 0px 600px;
-     height: 40px;
+    height: 40px;
     border: 2px solid #7f8188;
     background: #f0f0f0;
-    color: #7f8188;  
+    color: #7f8188;
 }
 
 .srock {
@@ -464,17 +561,18 @@ main {
     background: url(../img/infot.png) center/cover no-repeat;
     background-image: url(../img/infot.png);
     background-attachment: fixed;
-    
-    
+
+
 }
 
 .main__fad h2 {
-    
+
     margin: 60px 0px 70px 790px;
     font-size: 22px;
     font-weight: bold;
     color: black;
     text-transform: uppercase;
+    line-height: 160px;
 }
 
 .main120 img:hover {
@@ -555,6 +653,14 @@ main {
 
 .otzblv {
     text-align: center;
+
+}
+
+.otzblv input:hover {
+
+    transition: all 0.6s;
+    transform: scale(1.2);
+
 }
 
 .kontakt {
@@ -620,8 +726,27 @@ main {
     font-size: 14px;
     padding: 0px 16px;
     margin: 10px 14px 0px 14px;
+    transition: all 0.4s;
+    transform: scale(1);
+
+
 
 }
+
+.naw input: {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.naw input:hover {
+    background: #739bdd;
+}
+
+.naw input:active {
+    transform: scale(1.1);
+}
+
+
 
 .MOI {
     width: 100%;
@@ -640,8 +765,7 @@ main {
     background: #4a5661;
     color: white;
     display: inline-block;
-    text-align: center;
-    margin-top:
+    line-height: 55px;
 
 
 }
